@@ -4,7 +4,6 @@ Magic-Chess
 About the Game:
 
 OVERVIEW
-
 Magic chess is a multi-player online turn-based game which is played on a chessboard consisting of 32
 squares: four rows and eight columns. In the game, one player plays with the red pieces, and the other
 player plays with the black pieces.
