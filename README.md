@@ -19,8 +19,11 @@ There are two systems in this game: Lobby system and Chess game system.
 LOBBY SYSTEM
 
  Players can join the lobby room by accessing a specific http address.
+
  There are three tables in the game lobby.
+
  Players can join a game by clicking any table.
+
  Only two players are allowed to play a game for each table, two icons will be showed on the table.
 
 GAME SYSTEM
@@ -39,26 +42,35 @@ IN-GAME RULES
 Preliminary rules:
 
  This is a turn-based type game.
+
  The game starts with all pieces flipped over.
+
  The pieces will be placed randomly on the chessboard, consisting of 32 squares: eight rows and
 four columns.
+
  The player who joined the table first can move first.
+
  The game will start when both players click the start button.
 
 Actions in one turn:
 
  Players can click to turn over any flipped piece on board.
+
  Players can move any of their chessmen on the board.
+
  Players can capture any opponent’s piece according to capture rules.
 
 Capture rules:
 
  The chessman to be captured must be in an adjacent square horizontally or vertically.
+
  In the game, the hierarchy of pieces is:
 King > Adviser > Bishop > Rook > Knight > Cannon > Pawn.
+
  Pieces in the higher position can capture lower piece, except:
 
 o Only Pawn is able to capture King.
+
 o A chessman is able to capture the same chessman, for instance King can capture King.
 
 Capturing:
@@ -71,23 +83,37 @@ piece is deselected and the player can try again until his turn is finished.
 Capture List:
 
 King can capture King, Adviser, Bishop, Rook, Knight, Cannon, Pawn
+
 Adviser can capture Adviser, Bishop, Rook, Knight, Cannon, Pawn
+
 Bishop can capture Bishop, Rook, Knight, Cannon, Pawn
+
 Rook can capture Rook, Knight, Cannon, Pawn
+
 Knight can capture Knight, Cannon, Pawn
+
 Cannon can capture Cannon, Pawn
+
 Pawn can capture Pawn, King
 
 Piece movement rules:
 
  Chessmen only can be moved horizontally or vertically between two adjacent squares.
+
  There are several situations as follows :
+
 Objective square Movable
+
 Is empty 
+
 Is own piece Unmovable
+
 Is flipped piece Unmovable
+
 Your chessman > = Opponent’s chessman Movable
+
 Your chessman < Opponent’s chessman Unmovable
+
 To move a piece, the player left clicks it. The piece will be displayed in a selected state (blurred). Then
 players move the piece by left clicking mouse again at the target square.
 
@@ -99,6 +125,7 @@ opponent’s piece.
 End game rules:
 
  All of one player’s pieces are captured by his opponent.
+
  When player disconnects with server during the game, the game will end.
 
 Installation:
