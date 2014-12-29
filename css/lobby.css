@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.container{
+	background:#5E610B;
+	height:230px;
+	width:50%;
+	border: 3px solid black;
+	margin: 0 auto;
+}
+
+.circle {
+	float:left;
+	border-radius: 50%;
+    behavior: url(PIE.htc); /* to enable it for IE8 */
+}
+
+.table {
+	margin: 30px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border: 3px solid silver;
+}
+.player{
+  	position: relative;
+	top: -50%;
+	margin: 17px;
+	width: 15px;
+	height: 15px;
+	background: yellow;
+	border: 1px solid black;
+}

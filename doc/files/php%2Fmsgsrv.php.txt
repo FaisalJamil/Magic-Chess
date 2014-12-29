@@ -1,0 +1,23 @@
+<?php 
+/**
+This file acts as a long polling server, it 
+responds only when it has some new activity.
+It informs the clients as soon as a new 
+change is detected. 
+
+ */
+	$filename = 'request.log';
+	$last = isset($_GET['timestamp']) ? $_GET['timestamp'] : 0;
+	$current = filemtime($filename);
+
+	while( $current <= $last) {
+		usleep(100000);
+		clearstatcache();
+		$current = filemtime($filename);
+	}
+	
+	$response = array();
+	$response['msg'] = file_get_contents($filename);
+	$response['timestamp'] = $current;
+	echo json_encode($response);	
+?>

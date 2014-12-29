@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+.item{
+	float: left;
+	height: 67px;
+	width: 67px;
+	border: 1px solid #fff;
+}
+.item div.off{
+	height: 67px;
+	width: 67px;
+	background: #A52A2A no-repeat center center;
+}
+.item_ph{
+	float: left;
+	height: 67px;
+	width: 67px;
+	background: #fff;
+	border: 1px solid #fff;
+}
+.selectedToMove{
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur");
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}
+
+.on{
+	border: 1px solid #ffff00;
+	display: none;
+}
+
+.clear{
+	clear:both;
+}
+
+#game_board{
+	width: 400px;
+	height: 400px;
+	margin: 10px auto;
+}
+
+#player_won{
+	display: none;
+	background: #ff0000 no-repeat center center;
+	width: 331px;
+	height: 50px;
+	margin: 100px auto;
+}
+
+#start_again{
+	width: 200px;
+	margin: 0px auto;
+	display: none;
+}
+
+#start_again a{
+	background: #9BFF7A;
+	color: #3B993B;
+	border: 1px solid;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#start_again a:hover{
+	background: #3B993B;
+	color: #9BFF7A;
+}
+
+#control{
+	margin: 0px auto;
+}
+h3{
+	text-align: center;
+}
+#sfx_movie{
+	width: 1px;
+	height: 1px;
+}
